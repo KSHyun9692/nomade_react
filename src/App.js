@@ -1,40 +1,100 @@
 import Button from "./Button";
 import styles from "./App.module.css"
 import { useState, useEffect } from "react";
+////////////////////Movie////////////////////////
 
 function App(){
-  const [toDo, setToDo] = useState("");
-  const [toDos, setToDos] = useState([]);
-  const onChange = (event) =>setToDo(event.target.value);
-  const onSubmit = (event) => {
-    event.preventDefault();
-    if(toDo === ""){
-      return;
-    }
-    setToDos((currentArray) => [toDo, ...currentArray]);
-    setToDo("");
-  };
-  return(
-  <div>
-    <h1>My To Dos ({toDos.length})</h1>
-    <form onSubmit={onSubmit}>
-      <input 
-        onChange={onChange} 
-        value={toDo} 
-        type="text" 
-        placeholder="Wirte your to do..." 
-      />
-      <button>Add To Do</button>
-    </form>
-    <hr />
-    <ul>
-      {toDos.map((item, index) => 
-      (<li key={index}>{item}</li>
-      ))}
-    </ul>
-  </div>
+  const [loading, setLoading] = useState(true);
+
+  return (
+    <div>
+
+    </div>
   );
 }
+
+////////////////////Movie////////////////////////
+
+
+
+
+
+/////////////////// Coin Tracker만들어보기////////////////////////////////
+// function App(){
+//   const [loading, setLoading] = useState(true);
+//   const [coins, setCoins] = useState([]);
+//   const [value, setValue] = useState();
+//   useEffect(() => {
+//     fetch("https://api.coinpaprika.com/v1/tickers")
+//     .then((response) => response.json())
+//     .then((json) => {
+//       setCoins(json);
+//       setLoading(false);
+//     });
+//   }, []);
+//   const onChange = (event) => setValue(event.target.value);
+//   return (
+//     <div>
+//       <h1>The Coins! ({coins.length}) </h1>
+//       {loading ? (
+//         <strong>Loading...</strong>
+//       ) : (
+//         <div>
+//           <input
+//             type="number"
+//             value={value}
+//             onChange={onChange}
+//             placeholder="Put USD here"
+//           />
+//           <span>change==></span>
+//           <select>
+//             {coins.map((coin) => (
+//               <option>
+//                 {coin.name} ({coin.symbol}): {value ? value / coin.quotes["USD"].price : 0} {coin.symbol}
+//               </option> 
+//             ))}
+//           </select>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+
+/////////////////// Coin Tracker만들어보기////////////////////////////////
+
+// function App(){
+//   const [toDo, setToDo] = useState("");
+//   const [toDos, setToDos] = useState([]);
+//   const onChange = (event) =>setToDo(event.target.value);
+//   const onSubmit = (event) => {
+//     event.preventDefault();
+//     if(toDo === ""){
+//       return;
+//     }
+//     setToDos((currentArray) => [toDo, ...currentArray]);
+//     setToDo("");
+//   };
+//   return(
+//   <div>
+//     <h1>My To Dos ({toDos.length})</h1>
+//     <form onSubmit={onSubmit}>
+//       <input 
+//         onChange={onChange} 
+//         value={toDo} 
+//         type="text" 
+//         placeholder="Wirte your to do..." 
+//       />
+//       <button>Add To Do</button>
+//     </form>
+//     <hr />
+//     <ul>
+//       {toDos.map((item, index) => 
+//       (<li key={index}>{item}</li>
+//       ))}
+//     </ul>
+//   </div>
+//   );
+// }
 
 // function Hello(){
 //   useEffect(() => {
