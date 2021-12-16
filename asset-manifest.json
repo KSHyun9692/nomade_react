@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nomade_react.git/static/css/main.3a1df66c.chunk.css",
+    "main.js": "/nomade_react.git/static/js/main.ab84ae31.chunk.js",
+    "main.js.map": "/nomade_react.git/static/js/main.ab84ae31.chunk.js.map",
+    "runtime-main.js": "/nomade_react.git/static/js/runtime-main.deece573.js",
+    "runtime-main.js.map": "/nomade_react.git/static/js/runtime-main.deece573.js.map",
+    "static/js/2.f3bf487a.chunk.js": "/nomade_react.git/static/js/2.f3bf487a.chunk.js",
+    "static/js/2.f3bf487a.chunk.js.map": "/nomade_react.git/static/js/2.f3bf487a.chunk.js.map",
+    "index.html": "/nomade_react.git/index.html",
+    "static/css/main.3a1df66c.chunk.css.map": "/nomade_react.git/static/css/main.3a1df66c.chunk.css.map",
+    "static/js/2.f3bf487a.chunk.js.LICENSE.txt": "/nomade_react.git/static/js/2.f3bf487a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.deece573.js",
+    "static/js/2.f3bf487a.chunk.js",
+    "static/css/main.3a1df66c.chunk.css",
+    "static/js/main.ab84ae31.chunk.js"
+  ]
+}
